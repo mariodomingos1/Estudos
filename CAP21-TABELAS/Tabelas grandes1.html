@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas3</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            /*  border-collapse: collapse;para tirar o espaço entre as celulas*/
+            position: relative;
+            /*position: relative;usado com para fixar o cabeçalho*/
+            /*vertical-align:alinha na vertical no topo*/
+        }
+
+        td,
+        th {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: #383838;
+            color: #fff;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        td.num {
+            text-align: right;
+            /*text-align: right;alinha a direita da celula*/
+        }
+
+        th#larg {
+            width: 50px;
+        }
+
+        tbody>tr:nth-child(2n) {
+            /*para colorir linha sim, linha não = efeito zebrado*/
+            background-color: lightgray;
+        }
+
+        /* tbody>tr:nth-child(odd) {
+            background-color: blue;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: yellowgreen;
+        }
+        */
+        footer {
+            background-color: #383838;
+            color: #FFF;
+            height: 100px;
+        }
+
+        footer,
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--ANATOMIA PARA TABELAS GRANDES
+    -TABLE
+    -CAPTION
+    -THEAD
+        TR, TD TH
+    -TBODY
+        TR, TD TH
+    -TFOOT
+        TR, TD, TH
+    -->
+    <table>
+        <caption>POPULAÇÃO DAS UNICADES FEDERATIVAS</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" id="larg">POPULAÇÃO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SÃO APULO</td>
+                <td class="num">45.919,049</td>
+            </tr>
+            <tr>
+                <td>MINAS GERAIS</td>
+                <td class="num">21.168,791</td>
+            </tr>
+            <tr>
+                <td>RIO DE JANEIRO</td>
+                <td class="num">17.264,943</td>
+            </tr>
+            <tr>
+                <td>PARANÁ</td>
+                <td class="num">11.453,957</td>
+            </tr>
+            <tr>
+                <td>SANTA CATARINA</td>
+                <td class="num">7.167,788</td>
+            </tr>
+            <tr>
+                <td>RIO G DO SUL</td>
+                <td class="num">11.377,239</td>
+            </tr>
+            <tr>
+                <td>PERNAMBUCO</td>
+                <td class="num">9.557,071</td>
+            </tr>
+            <tr>
+                <td>CEARA</td>
+                <td class="num">9.132,078</td>
+            </tr>
+            <tr>
+                <td>PARÁ</td>
+                <td class="num">6.602,865</td>
+            </tr>
+            <tr>
+                <td>MARANHÃO</td>
+                <td class="num">7.075,181</td>
+            </tr>
+            <tr>
+                <td>GOIAS</td>
+                <td class="num">7.018,354</td>
+            </tr>
+            <tr>
+                <td>AMAZONAS</td>
+                <td class="num">4.144,597</td>
+            </tr>
+        </tbody>
+        <tr>
+            <td>ESPÍTO SANTO</td>
+            <td class="num">4.018,650</td>
+        </tr>
+        <tr>
+            <td>PARAÍBA</td>
+            <td class="num">4.018,187</td>
+        </tr>
+        <tr>
+            <td>RIO G DO NORTE</td>
+            <td class="num">3.506,853</td>
+        </tr>
+        <tr>
+            <td>MATO GROSSO</td>
+            <td class="num">3.484,466</td>
+        </tr>
+        <tr>
+            <td>ALAGOAS</td>
+            <td class="num">3.337,357</td>
+        </tr>
+        <tr>
+            <td>PIAUÍ</td>
+            <td class="num">3.273,227</td>
+        </tr>
+        <tr>
+            <td>DISTRITO FEDERAL</td>
+            <td class="num">3.015,266</td>
+        </tr>
+        <tr>
+            <td>MATO GROSSO DO SUL</td>
+            <td class="num">2.778,986</td>
+        </tr>
+        <tr>
+            <td>SERGIPE</td>
+            <td class="num">2.298,696</td>
+        </tr>
+        <tr>
+            <td>RONDÔNIA</td>
+            <td class="num">1.777,225</td>
+        </tr>
+        <tr>
+            <td>TOCANTINS</td>
+            <td class="num">1.572,856</td>
+        </tr>
+        <tr>
+            <td>ACRE</td>
+            <td class="num">881,935</td>
+        </tr>
+        <tr>
+            <td>AMAPÁ</td>
+            <td class="num">645,731</td>
+        </tr>
+        <tr>
+            <td>RORAIMA</td>
+            <td class="num">605,761</td>
+        </tr>
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="num"><strong>210.147,126</strong></td>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum asperiores a, numquam quisquam
+        eligendi necessitatibus libero adipisci. Quo fuga mollitia recusandae atque cupiditate, veniam assumenda
+        veritatis illum! Ducimus, voluptate?
+    </p>
+    <footer>
+        <h2>MODELO DE TABELAS GRANDES</h2>
+    </footer>
+
+</body>
+
+</html>

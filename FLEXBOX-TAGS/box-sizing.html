@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+<meta charset="UTF-8">
+<meta id="wiewpor" name="viewport" content="width=device-width,user-scalable=no"><!--PARA QUE O OSUARIO NÃO AUMENTE OU DIMINUA A TELA COM OS DEDOS-->
+<title>box-sizing</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<style>
+   /**{box-sizing: border-box;} seve pra todo o site*/
+div {
+width:200px;
+height:200px;
+background-color: #FF0000;
+border:10px solid #00FF00;
+padding:10px;
+box-sizing:border-box;
+/*o elemento fica 200x200 incluindo borda e padding*/
+/*-----------------------------------*/
+display: flex;/*essas 3 linha juntas é para o texto ficar no centro*/
+align-items: center;
+justify-content: center;
+}
+</style>
+</head>
+<body>
+    <div>Texto</div>
+</body>
+</html>

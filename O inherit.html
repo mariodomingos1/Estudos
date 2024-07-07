@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>O inherit</title>
+    <!--<link rel="stylesheet" href="estilo.css"/>-->
+    <style type="text/css">
+        body {
+            margin: 0;
+            background-color: #D3D3D3;
+        }
+     
+      .box {
+        background-color: #999;
+        font-size: 15px;
+        color: blue;
+       }
+       h1 {
+        font-size: 30px;
+        color: red;
+       }
+       .box h1 {
+        font-size: inherit;/*herda o tamanho da fonte do box*/
+        color: inherit;/*herda a dor da fonte do box*/
+       }
+    </style>
+</head>
+<body>
+    <h1>Este é o titulo fora da div</h1>
+   <div class="box">
+    <h1>Este é o titulo da pagina</h1>
+    Texto para teste
+    </div>
+</body>
+</html>

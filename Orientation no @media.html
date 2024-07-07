@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Orientation no @media</title>
+    <!--<link rel="stylesheet" href="estilo.css"/>-->
+    <style type="text/css">
+        body {
+            box-sizing: border-box;
+            background-color:#D3D3D3;
+            display: flex;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+        }
+      
+        @media (orientation: landscap){
+            body {
+                flex-direction: row;
+            }
+        }
+
+        @media (orientation: landscap){
+            body {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Orientation no @media</h1>
+
+<div>Caixa 1</div>
+<div>Caixa 2</div>
+<div>Caixa 3</div>
+<div>Caixa 4</div>
+
+</body>
+</html>

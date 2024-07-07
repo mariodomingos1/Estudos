@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="wiewpor" name="viewport" content="width=device-width,user-scalable=no">
+    <!--PARA QUE O OSUARIO NÃO AUMENTE OU DIMINUA A TELA COM OS DEDOS-->
+    <title>Autofocus</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            background-color: #eee;
+        }
+
+        form {
+            background-color: #ddd;
+            width: 180px;
+            height: 150px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post">
+        Usuário:<br />
+        <input type="text" name="usuario" autofocus /><br /><br />
+
+        Senha:<br />
+        <input type="password" name="senha" /><br /><br />
+
+        <input type="submit" value="Eviar" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" >
+    <title>Flexbox-alinamento2</title> 
+<style  type="text/css" >  
+   body {
+       margin: 0;
+   }
+   .container {
+        display: flex;
+        height: 500px;
+       flex-wrap: wrap; /* - quebra a linha, ou seja, parte dos elementos vem para linha abaixo*/
+        flex-direction: row;
+        justify-content: center;
+       /* align-items: center;*/
+        align-items: flex-start;/*so a div10 fica em baixo o resto vai para cima*/
+       background-color: #DDDDDD;
+      align-content: flex-end; /*  - os elementos vem para baixo*/
+      /* align-content: center; - os elementos vem para o centro*/
+       
+   }
+   .container div {
+       width: 100px;
+       height: 100px;
+       background-color: #FF0000;
+       margin: 10px;
+       padding: 10px;
+       font-size: 18px;
+   }
+   .div10 { /*exemplos*/
+       /*order: 1; - a div10 vai para o final*/
+      /* align-self: flex-start; - so a div10 vai para cima*/
+      /* align-self: flex-end; - so a div10 vem para baixo*/
+   }
+   .div14 {
+  /*  order: -1; - o 14 vai para o começo*/
+   }
+   
+</style>
+ </head>
+ <body>
+     <div class="container">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+         <div>4</div>
+         <div>5</div>
+         <div>6</div>
+         <div>7</div>
+         <div>8</div>
+         <div>9</div>
+         <div class="div10">10</div>
+         <div>11</div>
+         <div>12</div>
+         <div>13</div>
+         <div class="div14">14</div>
+         <div>15</div>
+     </div>
+    
+ </body>
+ </html>

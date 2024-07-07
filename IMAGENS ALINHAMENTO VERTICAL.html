@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta id="wiewpor" name="viewport" content="width=device-width,user-scalable=no"><!--PARA QUE O OSUARIO NÃO AUMENTE OU DIMINUA A TELA COM OS DEDOS-->
+<title> imagens alinhamento vertical</title>
+<link rel="stylesheet" href="" />
+<style type="text/css">
+  .container {
+    background-image: url('target001.png');
+    background-size: 100% 100%;
+
+    position: relative;
+    height: 96vh;
+    padding: 10px;
+    background-color:peru;
+  }
+  .conteudo {
+    background-image: url('target001.png'); 
+    background-size: 100% 100%;
+
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    background-color: yellowgreen;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50% -50%);/*50% para esquerda, 50% para direita*/
+  }
+    </style>   
+</head>
+<body>
+<section class="container">
+    <article class="conteudo">
+<h1>IMAGENS ALINHAMENTO VERTICAL</h1>  
+
+</article>
+</section>
+</body>
+</html>

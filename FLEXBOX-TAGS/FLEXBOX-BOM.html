@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta id="wiewpor" name="viewport" content="width=device-width,user-scalable=no">
+    <!--PARA QUE O OSUARIO NÃO AUMENTE OU DIMINUA A TELA COM OS DEDOS-->
+   <meta name="wiewport" content="width=device-width,user-scalable=0"/>
+  <!--Para que o site fica do tamanho do dispositivo usado; e também o zoon fica zero-->
+    <title>flexbox-Introdução</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <style type="text/css">
+        h4 {
+            text-align: center;
+        }
+        /*=========ALINHAMENTO EM CIMA A ESQUERDA================*/
+
+        .container {
+            display: flex;
+            height: 200px;
+            flex-direction: row; /*alinha na horizontal que é o padrão*/
+            background-color: #DDDDDD;
+        }
+      
+        .container div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*==================ALINHA EM CIMA A DIREITA========================================*/
+        .container1 {
+            display: flex;
+            height: 200px;
+            flex-direction: row-reverse;/*da direita para esquerda*/
+            background-color: #DDDDDD;
+        }
+        .container1 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*=================ALINHA EM COLUNA A ESQUERDA==========*/
+        .container2 {
+            display: flex;
+            height: 200px;
+            flex-direction: column;/*em coluna de cima para baixo*/
+            background-color: #DDDDDD;
+        }
+        .container2 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*===========================3=======================================*/
+        .container3 {
+            display: flex;
+            height: 200px;
+            flex-direction: column-reverse;/*em coluna de baixo para cima*/
+            background-color: #DDDDDD;
+        }
+        .container3 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /*=============================4=================================*/
+        .container4 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            background-color: #DDDDDD;
+        }
+        .container4 div {
+            width: 70px;
+            height: 70px;
+            flex:1;/*fica as 2 div na horizonta do mesmo tamanho*/
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /*=================FLEX1 E FLEX2 ================================*/
+        .container5 {
+            display: flex;
+            height: 100px;
+            background-color: #DDDDDD;
+        }
+        .div1 {
+            flex: 1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div2 {
+            flex:1;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .div3 {
+            flex: 2;/*a div3 fica com o dobro das outras*/
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /*=============FLEX-WRAP:WRAP PARA QUEBRAR LINHA===================================*/
+        .container6 {
+            display: flex;
+            height: 200px;
+            flex-wrap: wrap;/*para quebrar a linha*/
+            /*flex-flow: row wrap; OU ESSE*/
+            /*flex-flow:column */
+            background-color: #DDDDDD;
+        }
+        .container6 div {
+            width: 200px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        /*=================ALINHA NO MEIO EM CIMA===================================*/
+        .container7 {
+            display: flex;
+            height: 200px;
+            justify-content: center;/*usa essa tag para alinhar no meio da div*/
+            background-color: #DDDDDD;
+        }
+        .container7 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*================ALINHA NO CENTRO DA DIV=============*/
+
+        .container8 {
+            height: 200px;
+            display: flex;
+           justify-content: center; /*usa as duas teg p/ alinhar no centro da div*/
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container8 div {
+            width: 100px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*==========ALINHA EM COLUNA NA ESQUERDA  DA DIV============*/
+
+        .container9 {
+            display: flex;
+           height:  400px;
+            flex-direction: column;
+            background-color: #DDDDDD;
+        }
+      
+        .container9 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*===============ALINHA EM COLUNA NA ESQUERDA DA DIV NO MEIO=======*/
+
+        .container10 {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container10 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*============================11=======================*/
+        .container11 {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container11 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*==============================12===================*/
+        .container12 {
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container12 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        /*=============================13=================*/
+        .container13 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: flex-end;
+            background-color: #DDDDDD;
+        }
+      
+        .container13 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================14=================*/
+          .container14 {
+            display: flex;
+            height: 200px;
+            justify-content: space-around;
+            background-color: #DDDDDD;
+        }
+      
+        .container14 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================15=================*/
+          .container15 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #DDDDDD;
+        }
+      
+        .container15 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*==============JUSTFY-CONTENT:FLEX-START E ALIGN-ITENS:CENTER===============*/
+          .container16 {
+            display: flex;
+            height: 200px;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container16 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================17=================*/
+          .container17 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container17 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================18=================*/
+          .container18 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            background-color: #DDDDDD;
+        }
+      
+        .container18 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================19=================*/
+          .container19 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: #DDDDDD;
+        }
+      
+        .container19 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+          /*=============================20=================*/
+          .container20 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+        }
+      
+        .container20 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+  /*=============================21=================*/
+  .container21 {
+            display: flex;
+            height: 200px;
+            background-color: #DDDDDD;
+        }
+      
+        .container21 div {
+            width: 35px;
+            height: 35px;
+            background-color: #FF0000;
+            margin: 5px;
+            padding: 10px;
+            font-size: 18px;
+        }
+      
+  /*=============================22=================*/
+  .container22 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container22 div {
+            width: 35px;
+            height: 35px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+       .container22 .div7 {
+            align-self: flex-start;
+        }
+  /*=============================23=================*/
+
+  .container23 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: #DDDDDD;
+        }
+      
+        .container23 div {
+            width: 35px;
+            height: 35px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+       .container23 .div7 {
+            align-self: flex-end;
+        }
+/*=============================24=================*/
+
+.container24 {
+            display: flex;
+            height: 200px;
+            flex-direction:row ;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+        }
+      
+        .container24 div {
+            width: 35px;
+            height: 35px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+       .container24 .div7 {
+           align-self: flex-end;
+        }
+
+   /*=============USANDO A TAG ORDER============*/
+ 
+   .container25 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+        }
+      
+        .container25 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .container25 .div7 {
+            order: 1;
+        }
+        .container25 .div10 {
+            order: 2;
+        }
+  /*=================== ORDER:-999==========*/
+
+        .container26 {
+            display: flex;
+            height: 200px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+        }
+      
+        .container26 div {
+            width: 50px;
+            height: 50px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+       .container26 .div7 {
+        order:-1;  /*para ficar antes da div7 tem que por ORDER:-999;*/
+       } 
+     
+   /*=============================27=================*/
+   .container27 {
+            display: flex;
+            height: 400px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+            align-content: flex-end;/*só funciona quando tem 2 linhas ou +*/
+        }
+      
+        .container27 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+  /*=============================28=================*/
+  .container28 {
+            display: flex;
+            height: 400px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;;/*só funciona quando tem 2 linhas ou +*/
+            background-color: #DDDDDD;
+            align-content: flex-start;
+        }
+      
+        .container28 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+
+  /*=============================29=================*/
+  .container29 {
+            display: flex;
+            height: 400px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #DDDDDD;
+            align-content: center;;/*só funciona quando tem 2 linhas ou +*/
+        }
+      
+        .container29 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+
+   /*=============================30=================*/
+   .container30 {
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+        flex-direction: row;
+         justify-content: center;
+        align-items: flex-start;
+       background-color: #DDDDDD;
+        align-content: space-between;/*só funciona quando tem 2 linhas ou +*/
+        }
+      
+        .container30 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+   /*=============================31=================*/
+
+        .container31 {
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+        flex-direction: row;
+         justify-content: center;
+        align-items: flex-start;
+       background-color: #DDDDDD;
+        align-content: space-around;/*só funciona quando tem 2 linhas ou +*/
+        }
+      
+        .container31 div {
+            width: 70px;
+            height: 70px;
+            background-color: #FF0000;
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+   /*=============================32=================*/
+
+        .container32 {
+        display: flex;
+        height: 400px;
+        flex-wrap: wrap;
+        flex-direction: row;
+         justify-content: center;
+        align-items: flex-start;
+       background-color: #DDDDDD;
+        align-content: space-between;/*só funciona quando tem 2 linhas ou +*/
+        }
+           
+    </style>
+         <!--ACIMA CONFIGURAÇÕES DO CSS-->
+
+</head>
+
+<body>
+    <h4>ALINHAMENTO EM CIMA A ESQUERDA</h4>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--==========================================-->
+
+    <h4>ALINHA EM CIMA A DIREITA</h4>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM COLUNA A ESQUERDA</h4>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EN COLUNA REVERSE A ESQUERDA</h4>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=============ALINHA AS DUAS DIV EM CIMA===-->
+
+    <h4>ALINHA AS DUAS DIV EM CIMA</h4>
+    <div class="container4">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <!--===========FLEX1 E FLEX2===-->
+
+    <h4>FLEX1 E FLEX2</h4>
+    <div class="container5">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+    </div>
+    <!--=================================================-->
+    <h4>FLEX-WRAP:WRAP PARA QUEBRAR LINHA</h4>
+    <div class="container6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        </div>
+<!--=================================================-->
+<h4>ALINHA NO MEIO EM CIMA</h4>
+    <div class="container7">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA NO CENTRO DA DIV</h4>
+    <div class="container8">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM COLUNA NA ESQUERDA  DA DIV</h4>
+    <div class="container9">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM COLUNA NA ESQUERDA DA DIV NO MEIO</h4>
+    <div class="container10">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM COLUNA NO MEIO DA DIV</h4>
+    <div class="container11">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM COLUNA NO CENTRO DA DIV</h4>
+    <div class="container12">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA NA DIREITA EM CIMA</h4>
+    <div class="container13">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>USANDO SPACE-AROUND</h4>
+    <div class="container14">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>USANDO SPACE-BETWEEN</h4>
+    <div class="container15">
+        <div>1</div>
+        <div>2</div>
+    </div>
+    <!--==========JUSTFY-CONTENT:FLEX-START E ALIGN-ITENS:CENTER=====-->
+
+    <h4>JUSTFY-CONTENT:FLEX-START E ALIGN-ITENS:CENTER</h4>
+    <div class="container16">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA NO CENTRO A DIREITA</h4>
+    <div class="container17">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM BAIXO A DIREITA</h4>
+    <div class="container18">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM BAIXO NO MEIO</h4>
+    <div class="container19">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA EM CIMA NO MEIO</h4>
+    <div class="container20">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA TUDO EM CIMA</h4>
+    <div class="container21">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA 14 NO CENTRO E UMA EM CIMA</h4>
+    <div class="container22">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="div7">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA 14 NO CENTRO E UMA EM BAIXO</h4>
+    <div class="container23">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="div7">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>ALINHA 14 EM CIMA E UMA EM BAIXO</h4>
+    <div class="container24">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="div7">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>USANDO A TAG ORDER</h4>
+    <div class="container25">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="div7">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="div10">10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--==============USANDO A TAG ORDER -999===================================-->
+
+    <h4>USANDO A TAG ORDER -999</h4>
+    <div class="container26">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="div7">7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--===== align-content: flex-end;/*só funciona quando tem 2 linhas ou +*/==-->
+
+    <h4>align-content: flex-end; só funciona quando tem 2 linhas ou +</h4>
+    <div class="container27">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--======= align-items: flex-start;;/*só funciona quando tem 2 linhas ou +==-->
+
+    <h4> align-items: flex-start; só funciona quando tem 2 linhas ou +</h4>
+    <div class="container28">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4> align-content: center; só funciona quando tem 2 linhas ou +</h4>
+    <div class="container29">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>align-content: space-between; só funciona quando tem 2 linhas ou +</h4>
+    <div class="container30">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!--=================================================-->
+
+    <h4>lign-content: space-around; só funciona quando tem 2 linhas ou +</h4>
+    <div class="container31">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+                  
+</body>
+
+</html>

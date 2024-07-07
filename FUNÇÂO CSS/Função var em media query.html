@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" >
+    <title>Função var em media query</title> 
+<style  type="text/css" >  
+:root { /*:root para criar variavel de cor e fonte no site inteiro*/ 
+    --bg-color:#000;/*variavel de cor*/
+    --bg-second:#444;
+    --font-size: 25px;/*variavel de font*/
+}
+body {
+    background-color: var(--bg-color);
+    font-size: var(--font-size);
+}
+h2 {
+    color: var(--font-color,#0000ff);
+}    
+.container {
+    background-color: var(--bg-second);
+    color: var(--font-color);
+}
+@media (max-width: 45px) {
+    :root {
+        --font-size: 15px;
+    }
+}
+</style>
+ </head>
+ <body>
+   <h2>Seja bem vindo (a) ao meu site.</h2>
+        <div class="container">
+            Algum texto qualquer
+        </div>
+ 
+</body>
+ </html>

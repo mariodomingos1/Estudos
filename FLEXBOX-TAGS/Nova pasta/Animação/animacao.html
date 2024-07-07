@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+     <title>animação</title>
+          <link href="animacao.css" rel="stylesheet"/>
+          <style>
+            @keyframes exemplo {
+    0% {background-color:red;top:0;left:0;}
+    25% {background-color:yellow;top:0;left:500;}
+    50% {background-color:blue;top:500;left:500;}
+    75% {background-color:green;top:500;left:0;}
+    100% {background-color:red;top:0;left:0;}
+  }
+  body { 
+    margin:0;
+  }
+  .exemplo {
+      width:200px;
+      height:200px;
+      background-color:red;
+      position:absolute;
+      animation-name:exemplo;
+      animation-duration:4s;
+      border-radius: 10px;
+     /* animation-delay:1s; AO ABRIR A PÁGINA DEMORA 1S PARA COMEÇAR*/
+     /* animation-iteration-count:4; REPETE 4 VEZES*/
+     /* animation-iteration-count:infinite; REPETE INFINITAMENTE*/
+  }
+  
+  
+          </style>
+    </head>
+ <body>
+    
+     <div class="exemplo">
+        
+     </div>
+</body>
+</html>

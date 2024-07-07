@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Css @media para impressão</title>
+    <!--<link rel="stylesheet" href="estilo.css"/>-->
+    <style type="text/css">
+        body {
+            box-sizing: border-box;
+            background-color:#D3D3D3;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        table, td {
+        border: 1px solid #000;
+       }
+      /* @media only screen; não aparece na tela*/
+        @media only print {
+            h1 {
+            font-size: 20px;
+            font-weight: normal;
+        }
+        table, td {
+            border: 0;
+        }
+        }
+
+      
+    </style>
+</head>
+<body>
+   
+<h1>Css @media para impressão</h1>
+
+<table width="100%">
+    <tr>
+        <td>....</td>
+        <td>....</td>
+        <td>....</td>
+    </tr>
+    <tr>
+        <td>....</td>
+        <td>....</td>
+        <td>....</td>
+    </tr>
+</table>
+</body>
+</html>

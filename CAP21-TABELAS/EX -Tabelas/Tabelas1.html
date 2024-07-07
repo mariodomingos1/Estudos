@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            /*collapse = une as linha*/
+            /* border-collapse: separate;/*separate separa as linhas*/
+
+            /* border: 2px solid blue; borada em volta da tabela*/
+
+        }
+
+        tr.linha {
+            background-color: yellowgreen;
+        }
+
+        td {
+            border: 1px solid #000;
+            padding: 8px;
+        }
+
+        td.dado {
+            background-color: yellow;
+        }
+
+        /*tr.b1 { uma linha*/
+        table {
+            /*todas a s linhas da tabela*/
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minhas tabelas</h1>
+    <!--
+        HIRARQUIA DE TABELAS (simples)
+        TABLE = tabela
+         TABLE ROW = linha da tabela
+            TABLE HEADER = cabeçalho de tabela
+            TABLE DATA = dados da tabela
+            TR = linha
+            TD = celula
+    -->
+    <table>
+        <tr>
+            <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha">
+            <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="b1">
+            <td>UM</td>
+            <!--terceira linha-->
+            <td>DOIS</td>
+            <td>TREIS</td>
+        </tr>
+        <tr>
+            <td>A4</td>
+            <!--Quarta linha-->
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+        <tr>
+            <td>A5</td>
+            <td>B5</td>
+        </tr>
+        <tr>
+            <td>A6</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

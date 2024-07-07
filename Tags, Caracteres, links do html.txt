@@ -1,0 +1,51 @@
+HTNL SIGNIFICA
+ hyper text markup language
+
+TAG PARA TITULO GRANDE
+ <h1>
+
+TAG PARA QUEBRAR LINHA
+ <br/>
+
+INSERIR UMA COR DE FUNDO
+<body style="backgground-color:gree;">
+
+TAG PARA DESTACAR UM TEXTO
+<strong>
+
+CRIAR UM LINK
+<a href="https://B7web.com.br">B7WEB</A>
+
+CARACTERES PARA FIMDE TAG
+</>
+
+ABRIR UM LINK EM NOVA JANELA
+<a href="url"target_blank">
+
+TAG PARA TABELA
+<table><tr><td>
+
+TAG PARA LISTA NUMERADA
+<ol>
+
+TAG PARA LISTA DE PONTO
+<ul>
+
+PARA FAZER CHECKBOX
+<input type="checkbox">
+
+PARA FAZER UM CAMPO DE TEXTO
+<input type="text">
+
+PARA FAZER UMA LISTA DE SELEÇÃO
+<select>
+
+PARA FAZER UM CAMPO DE TEXTO GRANDE
+<textarea>
+
+INSERIR UMA IMAGEM
+<img src="imagem.jpg">
+
+INSERIR UMA IMAGEM DE FUNDO
+<body style="background-image:url(bg.jpg)">
+

@@ -1,0 +1,55 @@
+
+<!--BIBLIOTECA CSS3. HTTPS://GITHUB.COM/NICOLAS/NORMALIZE.CSS/-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta id="viwport" name="viewpor"content="width=device-width, ueser-scale=no">
+<title>flexbox linha e coluna</title>
+<!--<link rel="stylesheet" href="flexbox1.css"/> css externo-->
+<style type="text/css">/*css interno*/
+    .container {
+        display: flex;/* por padrão fica lado a lado*/
+        /*flex-direction: row;/* a padrão row =linha*/
+        /*flex-direction: column;/* alinha em coluna*/
+        /*flex-direction: row-reverse;/* alinha deaixo para cima*/
+        flex-direction: row;/* a padrão row =linha*/
+   /* display:none;/* a div não aparece*/
+   /*display:block;/*a div aparece*/
+   /*display:inlene;/*para ficar lado a lado*/
+   /*display:inlene-box;/*para ficar lado a lado*/
+  /* display:flex;/*para ficar flexivel*/
+   background-color:#dddddd;
+   margin: 10px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction:column;
+    background-color: #aeee;
+    margin: 10px;
+}
+.container div,
+ .container2 div {
+    background-color: #FF0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+</style>
+</head>
+<body> 
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

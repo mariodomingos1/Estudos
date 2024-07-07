@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+   
+<title>Tabela2</title>
+<link rel="stylesheet" type="text/css" href="estilotab.css"/> 
+   <style>
+    body {
+    margin: 50px;
+    font-size: 17px;
+}
+h1 {
+    font-family:'Indie Flower';
+}
+table {
+    width: 600px; 
+   /* border: 1px solid #000 borda na tabela*/
+}
+/*th, td {  borda no cabeçalho e nos itens da tabela
+border:1px solid #000;
+}*/
+table thead { /* o thead esta dentro do table, por isso qtem que por as duas tag*/
+background-color: #00ff00;
+}
+table tbody { /*tbody esta dentro do table..*/
+    background-color:yellowgreen;
+
+}
+th {
+    font-weight:normal; /*tira o negrito que é o padrão do cabçalho da tabela*/
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+tbody tr:hover { /*hover, quando passar o mouse muda de cor*/
+    background-color: #eee;
+}
+tbody td {
+    border: 1px solid #000;/*borda nos itens*/
+}
+thead th {
+    border:1px solid #000;
+}
+/*tbody tr:nth-child(even) {
+    background-color: #ddd; - linha par fica com cor diferente
+}*/
+    </style>
+</head>
+<body>
+
+    <h1>Tabela2</h1>
+
+    <table>
+        <table border="0">
+       <thead> <!--area do caeçalho da tabela, para motores de busca e para imprimir-->
+        <tr>
+            <th>Item 1</th>  <!--th significa cabeçalho-->
+            <th>Item 2</th>
+            <th>Item 3</th>
+        </tr>
+        </thead>
+        <tbody> <!--area do conteúdo-->
+        <tr> <!--tr significa linha-->
+            <td>0000</td> <!--td significa coluna-->
+            <td>0000</td>
+            <td>0000</td>
+        </tr>
+        <tr>
+            <td>0000</td> 
+            <td>0000</td>
+            <td>0000</td>
+        </tr>
+        <tr>
+            <td>0000</td> 
+            <td>0000</td>
+            <td>0000</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</body>
+</html>
+
+

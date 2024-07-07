@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" >
+    <title>função var</title> 
+<style  type="text/css" >  
+:root { /*:root para criar variavel no site inteiro*/ 
+    --bg-color:#000;/*variavel de cor*/
+    --bg-second:#444;
+    --font-color:#FFF;
+}
+body {
+    background-color: var(--bg-color);
+}
+h2 {
+    color: var(--font-color);
+}    
+.container {
+    background-color: var(--bg-second);
+    color: var(--font-color);
+}
+</style>
+ </head>
+ <body>
+   <h2>Seja bem vindo (a) ao meu site.</h2>
+        <div class="container">
+            Algum texto qualquer
+        </div>
+ 
+</body>
+ </html>

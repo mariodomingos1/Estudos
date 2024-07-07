@@ -1,0 +1,65 @@
+
+<!--BIBLIOTECA CSS3. HTTPS://GITHUB.COM/NICOLAS/NORMALIZE.CSS/-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta id="viwport" name="viewpor"content="width=device-width, ueser-scale=no">
+<title>flexbox4</title>
+<!--<link rel="stylesheet" href="flexbox1.css"/>-->
+<style type="text/css">
+    .container {
+        display: flex;/* por padrão fica lado a lado*/
+     flex-direction: row;
+     background-color: #DDDDDD;
+    margin: 10px;
+}
+
+.div1 {
+    flex: 1;/*flex1 se tiver mais de uma div, divide o espaço ficando no mesmo tamanho*/
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.div2 {
+    flex: 1;
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.div3 {
+    flex:1;/*flex2 fica o dobro do tamanho do flex1*/
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+*.div4 {
+    flex:3;/*flex3 fica o triplo do tamanho do flex1*/
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+</style>
+</head>
+<body> 
+    <div class="container">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+        
+        
+        
+    </div>
+
+    
+</body>
+</html>

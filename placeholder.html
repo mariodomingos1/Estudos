@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <meta charset="UTC-8" />
+        <title>placeholder</title>
+        <style>
+            body {
+    margin:0;
+    background-color: #EEE;
+}
+form {
+    width: 180px;
+    height: 150px;
+    background-color: #DDD;
+    margin:auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+input {
+    padding:5px;
+    font-size:13px;
+}
+        </style>        
+    </head>
+    <body>
+        <form method="POST">
+            Usuário:<br/>
+            <input type="text" name="usuario" autofocus /><br/><br/>
+          <!--  <input type="text" name="usuario" maxlenght="4" />4 = maximo de caracteres a ser digitado-->
+           <!-- <input type="text" name="usuario" size="10" /> 10 = a quantidade de caracteres a ser digitado-->
+          <!--  <input type="text" name="usuario" placeholder="Usuário"/><br/><br/> cursor aparece no campo-->
+
+            Senha:<br/>
+            <input type="password" name="senha" /><br/><br/>
+
+            <input type="submit" value="Enviar"/>
+        </form>
+    </body>
+</HTML>

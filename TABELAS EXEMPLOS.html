@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>TABELAS EXEMPLOS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            width: 400px;
+            background-color: #555;
+            text-align: center;
+            border-radius: 5px;
+        }
+        /*=========EXEMPLO 1============*/
+        .tb1 {
+            width: 400px;
+        }
+        .tb1 td {
+            border: 1px solid #000;
+            padding: 8px;
+           }
+               
+        
+        /*================exemplo 2===========*/
+
+        .tb2 {
+            width: 400px;
+           border-collapse:collapse ;
+        }
+        .tb2 td {
+            border: 1px solid #000;
+            padding: 8px;
+          }
+         .tb2 .t1 {
+            background-color: green;
+          }
+          .tb2 .t2 {
+            background-color: #696969;
+          }
+           
+
+        /*==========EXEMPLO 3============*/
+
+        .tb3 {
+            width: 400px;
+        }
+        .tb3  td {
+            border: 1px solid #000;
+            padding: 8px;
+                  }
+          .tb3 .t2 {
+            background-color: yellow;
+          }       
+        .tb3 .t4 {
+            background-color: red;
+        }
+
+        /*==========EXEMPLO 4=========*/
+        .tb4 {
+            width: 400px;
+            border: 5px solid red;
+        }
+        .tb4  td {
+            border: 1px solid #000;
+            padding: 8px;
+            }
+            .tb4 .tr1 {
+                background-color: blue;
+            }
+
+            /*==========EXEMPLO 5===========*/
+            .tb5 {
+            width: 400px;
+            border-collapse:collapse ;
+        }
+        .tb5  td {
+            border: 1px solid #000;
+            padding: 8px;
+            }
+             /*==========EXEMPLO 6===========*/
+            .tb6 {
+            width: 400px;
+            height: 400px;
+            border-collapse:collapse ;
+        }
+        .tb6  td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;/*alinha no centro*/
+           /* text-align: reight;   alinha a dieita*/
+            }
+
+               /*==========EXEMPLO 7===========*/
+
+             .tb7 {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+        }
+        .tb7 td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;/* horizontal*/
+            vertical-align: top;/*vertical em cima*/
+            /*vetival-align:bottom; vertical em baixo*/
+             }
+          /*==========EXEMPLO 8===========*/
+
+          .tb8 {
+            width: 400px;
+        }
+        .tb8 td {
+            border: 1px solid #000;
+            padding: 8px;
+           }
+           /*=========exemplo 9=====*/
+           .tb9 {
+            width: 400px;
+        }
+        .tb9 td {
+            border: 1px solid #000;
+            padding: 8px;
+           }
+
+              /*=========exemplo 10=====*/
+            .tb10 {
+            width: 400px;
+        }
+        .tb10 td {
+            border: 1px solid #000;
+            padding: 8px;
+           }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLO 1</h1>
+
+    <table class="tb1">
+        <tr><!--Primeira linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><!--sgunda linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+
+<!--==================TB2===========================-->
+
+     <h1>EXEMPLO 2</h1>
+
+    <table class="tb2">
+        <tr class="t1"><!--Primeira linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr class="t2"><!--sgunda linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><!--terceira linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr><!--quarta linha-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+<!--==================TB3=====================-->
+    <h1>EXEMPLO 3</h1>
+
+    <table class="tb3">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr class="t2">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="t4">4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+<!--==================TB4=====================-->
+
+    <h1>EXEMPLO 4</h1>
+
+    <table class="tb4">
+        <tr >
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr >
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+
+    <!--===================tab5=============-->
+        <h1>EXEMPLO 5</h1>
+
+    <table class="tb5">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>1</td>
+        </tr>
+    </table>
+   
+
+        <!--===================tab6=============-->
+
+    <h1>EXEMPLO 6</h1>
+
+    <table class="tb6">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        </table>
+
+        <!--===================tab7=============-->
+
+
+    <h1>EXEMPLO 7</h1>
+
+    <table class="tb7">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+       <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+   <!--================tab8========-->
+
+    <h1>EXEMPLO 8</h1>
+
+    <table class="tb8">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+       <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+     <!--======================tab9========-->
+
+    <h1>EXEMPLO 9</h1>
+
+    <table class="tb9">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+       <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+       <!--=====================tab10========-->
+
+    <h1>EXEMPLO 10</h1>
+
+    <table class="tb10">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+       <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+</body>
+</html>

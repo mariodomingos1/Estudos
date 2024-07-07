@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Input type hidenn</title>
+    <style type="text/css">
+          fieldset {
+    background-color: #EEE;
+    margin-bottom: 20px;
+    border: 4px solid cadetblue;
+   }
+   legend {
+    background-color: cadetblue;
+    color: #FFF;
+    padding: 5px;
+   }
+   div  label {
+    display: block;
+    margin-bottom:20px ;
+   }
+   div  input[type="text"] {  /*para selecionar somente os inputs 'text e password'*/
+    padding: 10px;
+    width: 500px;
+    font-size: 17px;
+    border: 1px solid #CCC;
+    outline: 0;/*para remover a borda padrão do navegador*/
+    margin-top: 5px;
+   }
+   div input {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+   }
+   input:hover {
+    background-color: #999;
+   }
+    </style>
+    </style>
+</head>
+<body>
+    <div>
+        <h4>Formulario Profissionais</h4>
+        
+        <form method="post"  action="blablabla.php" enctype="multipart/form-data">
+            <input type="hidden" name="country" value="BR"/><!--HIDDEN DEIXA O CAMPO OCULTO-->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br/>
+                <input type="text" name="name" required/>
+                <!--required torna o campo obrigatorio; minlength minimo de caracteres que e "2"-->
+            </label><br/>
+        
+            <label>
+            Sobrenome:<br/>
+            <input type="text" name="lastname" />
+        </label><br/>
+
+        <label>
+            Sobrenome:<br/>
+            <input type="file" name="photo" accept="image* "/><!-- PARA ENVIAR QUALQUER TIPO DE FOTOS E IMAGENS-->
+        </label><br/>
+        
+        
+        <label>
+            Idade:<br/>
+            <input type="number" name="age" min="18" max="70"/>
+        </label><br/>
+        
+        <label>
+            Data de Nascimento:<br/>
+            <input type="date" name="birthdate" min="2005-12-31" required /><!--min="2" max="8" />-->
+        </label><br/>
+        
+        <label>
+            E-mail:<br/>
+        <!--<input type="tex" name="email" pattern="(^[a-zA-Z0-9_.+-]+@[a-zA--Z0-9-]*\.[a-zA-z0-9-.]+$)"  title="endereço de e-mail" required/>-->
+        <input type="tex" name="email" required/>
+        </label><br/>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br/>
+                <input type="text" name="companyname" />
+            </label><br/>
+
+            <label>
+                Cargo na empresa:<br/>
+                <input type="text" name="companyjobtitle" />
+            </label><br/>
+        </fieldset>
+            <input type="submit" value="Cadastrar" />
+        </form>
+    </div>
+</body>
+</html>

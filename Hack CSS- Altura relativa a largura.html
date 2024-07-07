@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=no" >
+    <title>Hack CSS:Altura relativa a largura</title> 
+<style  type="text/css" >  
+    .video {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;/*margim auto para o video sempre ficar no meio da tela*/
+    }
+    .video-area {
+        position: relative;
+        height: 0px;
+        background-color: #CCC;
+        padding: 0px 0px 56.25%;/*no formato 'fohd'16por9, ou seja a proporção é 720/1280*100*/
+    }
+    .video-area iframe {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+</style>
+ </head>
+ <body>
+     <h2>Titulo do site.</h2>
+     <div class="video">
+         <div class="video-area">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kk_pGWE"></iframe>
+         </div>
+     </div>
+     
+        
+ 
+</body>
+ </html>

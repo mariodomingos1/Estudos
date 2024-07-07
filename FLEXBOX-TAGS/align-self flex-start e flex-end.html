@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+    <head>
+<title>align-self flex-start e flex-end</title>
+<style type="text/css">
+   .container {
+        display: flex;
+        height: 500px;
+       /*align-items: flex-start; / alinha na orizontal na parte de cima da tela*/
+       align-items: center; /*alinha na orizontal no meio da tela*/
+       background-color:yellowgreen;
+        }    
+   .container div {
+       width:150px;
+       height:100px;
+       background-color: red;
+       margin: 10px;
+       padding: 10px;
+       font-size: 18px; 
+   }  
+   .aa {
+       align-self: flex-start; /*/ alinha a class especificada em cima na tela*/
+   }    
+   .bb {
+       align-self: flex-end; /*alinha a class escpecificada em baixo na tela*/
+   }   
+/*.cc {
+    order:-1; / coloca a class especificada no inicio da linha orizontal
+}*/
+</style>
+ </head>
+ <body>
+   
+    <div class="container">
+      <div class="aa">1</div>  
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>  
+      <div>6</div>
+      <div>7</div>
+      <div class="bb">8</div>
+      <div>9</div>
+      <div class="cc">10</div>
+      <div>11</div>  
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div class="aa">15</div> 
+    </div>    
+ </body>
+</html>

@@ -1,0 +1,63 @@
+
+<!--BIBLIOTECA CSS3. HTTPS://GITHUB.COM/NICOLAS/NORMALIZE.CSS/-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta id="viwport" name="viewpor"content="width=device-width, ueser-scale=no">
+<title>flex alinha no centro em cima e em baixo</title>
+<!--<link rel="stylesheet" href=".css"/> css externo-->
+<style type="text/css"> /* css interno*/
+    .container {
+        display: flex;
+        height: 500px;
+       flex-direction: row;
+       justify-content:center;
+       align-items: center;
+       background-color: #dddddd;
+        margin: 10px;
+    }
+
+    .container div {
+        width: 100px;
+        height: 100px;
+        background-color: #ff0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .div10 {
+        align-self:flex-start;
+        /*order: 1; a div10 vai para o final*/
+    }
+
+    .div11 {
+        align-self: flex-end;
+        
+    }
+</style>  
+</head>
+<body> 
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="div10">10</div>
+        <div class="div11">11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+        </div>
+
+    
+</body>
+</html>

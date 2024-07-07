@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta id="wiewpor" name="viewport" content="width=device-width,user-scalable=0" />
+    <title>flexbox 15div</title>
+    <link rel="stylesheet" type="text/css" href=".css"/>
+<style  type="text/css">
+    .container {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #DDDDDD;
+        align-content: flex-end;/*alinha tudo em baixo*/
+    }
+    .container div {
+        width: 100px;
+        height: 100px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+/*======USA-SE ESSA FORMATAÇÃO QUANDO TEM VÁRIOS CONTEÚDO E TEM QUE QUEBRAR LINHA====*/
+    .container1 {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #DDDDDD;
+        align-content: flex-start;/*alinha tudo em cima*/
+    }
+    .container1 div {
+        width: 100px;
+        height: 100px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    /*==============================================================================*/
+    .container2 {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #DDDDDD;
+        align-content: center;/*alinha tudo em cima*/
+    }
+    .container2 div {
+        width: 100px;
+        height: 100px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    /*==============================================================*/
+    .container3 {
+        display: flex;
+        height: 500px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #DDDDDD;
+        align-content: space-between;
+    }
+    .container3 div {
+        width: 100px;
+        height: 100px;
+        background-color: #FF0000;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+    }
+    </style>
+</head>
+<body>
+    <h4>ALINHA TUDO EM BAIXO</h4>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <hr>
+    <h4>ALINHA TUDO EM CIMA</h4>
+    <div class="container1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <hr>
+    <h4>ALINHA TUDO NO MEIO</h4>
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <h4>ALINHA EM CIMA E EM BAIXO</h4>
+    <div class="container3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div >10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+</body>
+</html>
