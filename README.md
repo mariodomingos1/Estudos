@@ -1,2 +1,4 @@
 # Estudos
- curoso de html e css
+
+curoso de html e css
+Estou Aprendendo html e css!
